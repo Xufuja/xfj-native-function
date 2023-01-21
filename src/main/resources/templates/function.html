@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Maintenance</title>
+    <style>
+      body {
+        background-color: #5CA0D3;
+        color: #fff;
+        text-align: center;
+        margin: 0; /* Remove default margin */
+        display: flex; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        justify-content: center; /* Center the content horizontally */
+        height: 100vh; /* Make the height of the body equal to the viewport height */
+        font-family: 'Open Sans', sans-serif; /* Use the Open Sans font */
+      }
+      h1 {
+        margin-top: 50px;
+      }
+      /* Navigation bar styling */
+      .navbar {
+        position: absolute; /* Make the navigation bar stay at the top */
+        top: 0; /* Align the navigation bar to the top */
+        left: 0; /* Align the navigation bar to the left */
+        right: 0; /* Make the navigation bar span the entire width of the screen */
+        background-color: #333;
+        height: 50px;
+        display: flex; /* Make the navigation items horizontally aligned */
+        align-items: center; /* Align navigation items vertically to the center */
+        justify-content: space-between; /* Add space between navigation items */
+        padding: 0 20px; /* Add padding to the navigation bar */
+        box-sizing: border-box; /* Include padding in the box size */
+      }
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+      /* Highlight the current page */
+      .navbar .current {
+        color: #5CA0D3;
+        font-weight: bold;
+      }
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#" class="current">Home</a>
+</div>
+<h1 th:text="${input}"></h1>
+<p th:text="${second}"></p>
+</body>
+</html>

@@ -44,7 +44,7 @@ public class XfjNativeFunctionApplication implements ApplicationContextInitializ
             kv.put("second", value);
             context.setVariables(kv);
             
-            String html = springTemplateEngine.process("index", context);
+            String html = springTemplateEngine.process("function", context);
             logger.info(html);
 
             return html;
